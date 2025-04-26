@@ -51,35 +51,26 @@ $recentRequests = $conn->query("
 
     <div class="row mt-4">
         <div class="col-md-4">
+            <div class="card text-white bg-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Total Employees</h5>
+                    <p class="card-text display-4"><?php echo $totalEmployees; ?></p>
+                    <i class="fas fa-users fa-2x"></i>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
             <div class="card text-white bg-success">
                 <div class="card-body">
-                    <h5 class="card-title">Total Projects</h5>
-                    <p class="card-text display-4"><?php echo $totalProjects; ?></p>
-                    <i class="fas fa-tasks fa-2x"></i>
+                    <h5 class="card-title">Total Departments</h5>
+                    <p class="card-text display-4"><?php echo $totalDepartments; ?></p>
+                    <i class="fas fa-building fa-2x"></i>
+                    
                 </div>
             </div>
         </div>
-
-        <div class="col-md-4">
-            <div class="card text-white bg-warning">
-                <div class="card-body">
-                    <h5 class="card-title">Total Purchase Requests</h5>
-                    <p class="card-text display-4"><?php echo $totalRequests; ?></p>
-                    <i class="fas fa-clipboard-list fa-2x"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card text-white bg-info">
-                <div class="card-body">
-                    <h5 class="card-title">Total Vehicles</h5>
-                    <p class="card-text display-4"><?php echo $totalVehicles; ?></p>
-                    <i class="fas fa-car-side fa-2x"></i>
-                </div>
-            </div>
-        </div>
-    </div>
     
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
